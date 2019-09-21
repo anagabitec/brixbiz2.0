@@ -1,0 +1,64 @@
+Following are code snippets and pseudocode for potential use
+
+functionality
+Search engine for small businesses in user's local area.
+Searching business by type or store stock items.
+Create profiles for online presence. 
+    Users rating/suggesting businesses
+
+Inputs :
+Search types
+    items
+    businesses
+            - create a constructor for businesses object to be used in gets and post requests
+                class Business {
+                    constructor(name){
+                        this.name = name;
+                        this.type = "";
+                        this.address = "";
+                        this.zip = "";
+                        this.email = "";
+                        this.contact = "";
+                    }
+                    sendInvite(){
+                        alert(`Email invitation sent to ${this.name}`);
+                    }
+                }
+                const business = new Business("mom'npop shop");
+Create Profiles
+    user
+        rating businesses & couriers
+        suggest new businesses
+        mobile order for pick up
+        mobile order for delivery
+    business
+        online introduction and self-promotion
+        listing of inventory
+        
+    courier
+        online registation
+        delivery service
+
+Outputs
+    collection of data
+
+Tech :  React
+    SQL or Firebase for data storage
+
+
+
+Code reference :
+    project 2
+
+App build approach:
+    Review  activities, class videos and hws to find useful code.
+
+
+View
+
+Home page:
+    google type front page with a search bar for items or businesses
+
+registering profile:
+    user
+    business
