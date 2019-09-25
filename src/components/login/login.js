@@ -17,8 +17,9 @@ import "../../styles/jumbotron.css";
 const LoginPage = () => {
     return (
         <Layout>
-        <MDBContainer > 
-                <MDBRow className="backgroundlogin">
+            <MDBContainer fluid className="backgroundlogin">
+                <MDBContainer>
+                <MDBRow>
                 <MDBCol md="6">
                     <MDBCard>
                         <MDBCardBody>
@@ -67,6 +68,7 @@ const LoginPage = () => {
                     </MDBCard>
                 </MDBCol>
             </MDBRow>
+            </MDBContainer> 
         </MDBContainer>
         </Layout>
     );

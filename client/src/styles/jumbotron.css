@@ -1,0 +1,19 @@
+.display-4 {
+    font-family: 'Righteous', cursive !important;
+}
+.jumbo{
+    background: url("/backgroundimg.jpeg") center center;
+    background-size: cover;
+    padding-top:40px;
+    min-height: 10vh;
+}
+.jumbo{
+     margin-top: 25px;
+     
+}
+
+
+.search{
+    margin-left: 30%;
+    margin-right: 30%;
+}

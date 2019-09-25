@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "type": "Butcher Shops",
+        "image": "./img-placeholder.png"
+    },
+    {
+        "id":2,
+        "type": "Bakeries",
+        "image": "./img-placeholder.png"
+    },
+    {
+        "id":3,
+        "type": "Grocery Stores",
+        "image": "./img-placeholder.png"
+    },
+    {
+        "id":4,
+        "type": "Fish Markets",
+        "image": "./img-placeholder.png"
+    },
+    {
+        "id":5,
+        "type": "Florists",
+        "image": "./img-placeholder.png"
+    },
+    {
+        "id":6,
+        "type": "Pharmacies",
+        "image": "./img-placeholder.png"
+    },
+
+]

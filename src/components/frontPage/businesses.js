@@ -3,6 +3,7 @@ import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import butcher from "./butcher.jpg";
 import florist from "./florist.jpg";
 import bakeries from "./bakeries.jpg";
+import "../../styles/busform.css";
 
 class HoverPage extends React.Component {
     render() {

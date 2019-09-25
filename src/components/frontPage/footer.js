@@ -4,7 +4,7 @@ import "../../styles/footer.css";
 
 const FooterPage = () => {
     return (
-        <MDBFooter color="#1b5e20 green darken-4" className="font-small pt-4 mt-4">
+        <MDBFooter color="#1b5e20 green darken-4" className="myFooter font-small pt-4 mt-4">
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="6">

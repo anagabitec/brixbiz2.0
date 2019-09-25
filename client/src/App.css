@@ -1,0 +1,69 @@
+
+.front-page4 {
+  background-color: #282c34; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  background-image: linear-gradient(to right , silver,gray, rgba(255,0,0,0), green);
+  background-size: cover;
+    
+}
+
+.front-page2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
+  /* text-align: center; */
+/* }
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  /* height: 20vmin;
+  /* pointer-events: none; */
+/* }
+
+.App-header, 
+.front-page2 {
+  background-color:#282c34;;
+  padding: 10px;
+ 
+}
+
+.front-page3{
+  background-color:#282c34;;
+   padding: 100px;
+} 
+
+
+
+.jumbotron {
+  background-image: url();
+} */ 
+
+/* .front-page4{
+  margin-bottom: 100px;
+} */
+

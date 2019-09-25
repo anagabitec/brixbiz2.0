@@ -26,7 +26,7 @@ class FormsPage extends React.Component {
     render() {
         return (
             <Layout>
-                <div className="form-group">
+                <div className="container">
                 
                 <form
                     className="needs-validation"
