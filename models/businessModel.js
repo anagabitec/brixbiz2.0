@@ -1,43 +1,25 @@
-// var Sequelize = require("sequelize");
-// var sequelize = require("../config/connection.js")
-
-// var Business = sequelize.define("business", {
-//     name: Sequelize.STRING,
-//     website: Sequelize.STRING, 
-//     addressBuilding: Sequelize.STRING,
-//     addressStreetName: Sequelize.STRING,
-//     secondaryAddressStreetName: Sequelize.STRING,
-//     addressCity: Sequelize.STRING,
-//     addressState: Sequelize.STRING,
-//     addresZIP: Sequelize.STRING,
-//     phoneNumber: Sequelize.STRING,
-//     bizType: Sequelize.STRING, 
-// });
-
-// Business.sync();
-
-
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
-const bizSchema = Schema(
-    {
-        name: { type: String, required: true },
-        website: { type: String, required: false },
+let BizSchema = new Schema({
+        name: { type: String },
+        website: { type: String },
         address: {
-            addressBuilding: { type: String, required: true },
-            addressStreetName: { type: String, required: true },
-            addressCity: { type: String, required: true },
-            addressState: { type: String, required: true },
-            addresZIP: { type: String, required: true }
+            addressBuilding: { type: String },
+            addressStreetName: { type: String },
+            addressCity: { type: String },
+            addressState: { type: String },
+            addresZIP: { type: Number }
         },
-        phoneNumber: { type: String, required: true },
-        brixbizRegistered: { type: Boolean, required: true },
-        inventoryListed: { type: Boolean, required: true },
+        phoneNumber: { type: String },
+        brixbizRegistered: { type: Boolean},
+        inventoryListed: { type: Boolean },
         businessType: [],
         tags: []
-
 });
-const Business = mongoose.model("Business", bizSchema);
+
+let Business = mongoose.model("Business", BizSchema);
 
 module.exports= Business;
+
+// module.exports = mongoose.model("Business", bizSchema)

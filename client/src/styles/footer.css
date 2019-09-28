@@ -1,11 +1,40 @@
 .myFooter {
-    background-color: rgb(3, 59, 3);
+    background-color:#0c5a10;
+    margin: 0 !important; 
     /* position: absolute;
     bottom:0;
     width:100%; */
-    margin-bottom: 0px;
-    margin-top: 0px;
+    /* margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin: 0 !important; 
+    padding-top: 0rem!important;
+    margin-top: 0rem!important; */
+    
 }
 h5{
     font-family: 'Righteous', cursive !important;
+}
+
+
+.OurTeam{
+    text-align: left;
+}
+.ourteam{
+    text-align: center;
+    margin-right: 34px;
+    padding-bottom: 5%;
+    
+    
+}
+.img1{
+    text-align:center; 
+    padding: 10%;
+    align-content: right;
+}
+.img2{
+     padding: 10%;
+
+}
+.page-footer{
+   margin: 0 !important;
 }

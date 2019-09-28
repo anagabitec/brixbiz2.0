@@ -2,30 +2,30 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
     "mdbreact";
-import butcher from "./butcher.jpeg";
-import florist from "./florist.jpg";
-import bakeries from "./bakeries.jpeg";
-import hardware from "./hardware.jpg"
-import farmers from "./farmers.jpg"
+import butcher from "../frontPage/images/butcher.jpeg";
+import florist from "../frontPage/images/florist.jpg";
+import bakeries from "../frontPage/images/bakeries.jpeg";
+import hardware from "../frontPage/images/hardware.jpg"
+import farmers from "../frontPage/images/farmers.jpg"
 import "../../styles/businesses.css";
 
 
 
 const CarouselPage = () => {
     return (
-        <MDBContainer>
+        <MDBContainer >
             <MDBCarousel
                 activeItem={1}
                 length={5}
                 showControls={true}
                 showIndicators={true}
-                className="z-depth-1"
+                className="z-depth-1 carouselcontainer"
             >
                 <MDBCarouselInner>
                     <MDBCarouselItem itemId="1">
-                        <MDBView>
+                        <MDBView className='image-container'>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 image-carousel"
                                 src={hardware}
                                 alt="First slide"
                             />
@@ -39,7 +39,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="2">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 image-carousel"
                                 src={butcher}
                                 alt="First slide"
                             />
@@ -53,7 +53,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="3">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 image-carousel"
                                 src={florist}
                                 alt="Second slide"
                             />
@@ -67,7 +67,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="4">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 image-carousel"
                                 src={bakeries}
                                 alt="Third slide"
                             />
@@ -81,7 +81,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="5">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 image-carousel"
                                 src={farmers}
                                 alt="Third slide"
                             />

@@ -24,7 +24,9 @@ class Pills extends Component {
             <MDBContainer className="mt-4">
                 <MDBRow>
                     <MDBCol md="12">
-                        <h2>Join Us</h2>
+
+                        <h3>Join Us</h3>
+
                         <MDBNav className="mt-5 nav-pills">
                             <MDBNavItem>
                                 <MDBNavLink to="#" active={this.state.items["default"] === "1"} onClick={this.togglePills("default", "1")} >

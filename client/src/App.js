@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch , BrowserRouter as Router, Route } from "react-router-dom";
-import HomePage from './components/frontPage/frontPage'
+import HomePage from './components/pages/home/frontPage'
 import LoginPage from "./components/login/login"
 import FormsPage from './components/login/bizregister'
-import AboutUs from './components/frontPage/aboutus'
+import AboutUs from './components/pages/aboutus/aboutus'
 import Footer from './components/frontPage/footer'
-import WrappedMap from './components/frontPage/mapfield'
+import WrappedMap from './components/pages/discover/discover.js'
 
 
 function App() {
@@ -18,15 +18,15 @@ function App() {
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/bizregister" component={FormsPage} />
           <Route exact path="/aboutus" component={AboutUs}/>
-          <Route exact path="/mapfield" component={WrappedMap} />
+          <Route exact path="/discover" component={WrappedMap} />
           
           {/* <Route exact path="/discover" component={Discover}/> */}
 
 
       </Switch>
-      
+        <Footer />
     </Router>
-      <Footer />
+      
     </>
   );
 }

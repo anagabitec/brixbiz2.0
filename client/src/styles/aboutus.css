@@ -3,8 +3,12 @@
     min-height: 85vh;
      /* background: url("/backgroundabout.jpeg") center center; */
     background-image: linear-gradient(to right, white,rgb(235, 195, 162),silver);
+
     background-size: cover;
     color: black;
 }
+.aboutus{
+    width: 300px;
+}
 
-   
+

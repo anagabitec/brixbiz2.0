@@ -1,25 +1,26 @@
-const db = require("../models/businessModel");
+// const db = require("../models/businessModel");
 
-// 20-react activity 09
-// Define methods for the bizController
-module.export = {
-    findNearby: function(req, res) {
-        db.Business
-        .find(req.query)
-        .sort({ proximity: 1})
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err));
-    },
-    findById: function(req, res) {
+// // 20-react activity 09
+// // Define methods for the bizController
+// module.export = {
+//     findNearby: function(req, res) {
+//         db.Business
+//         .find(req.query)
+//         .sort({ proximity: 1})
+//         .then(dbModel => res.json(dbModel))
+//         .catch(err => res.status(422).json(err));
+//     },
+//     findById: function(req, res) {
 
-    }
-}
+//     }
+// }
 
 // ref medium.com
-const Business = require('../models/businessModel');
+// import Business from "../models"
+const Business = require('../models/businessModel.js');
 
 createBusiness = (req, res) => {
-    const body = req.body;
+    const body = req.body
     if (!body) {
         return res.status(400).json({
             success: false,
@@ -40,6 +41,12 @@ createBusiness = (req, res) => {
                 message: 'Business added',
             })
         })
+        .catch(error => {
+            return res.status(400).json({
+                error,
+                message: "Business not created",
+            })
+        })
 }
 
 updateBusiness = async (req, res) => {
@@ -51,7 +58,7 @@ updateBusiness = async (req, res) => {
             error: 'You must provide a body to update',
         })
     }
-    Business.findOne({ _id: req.params.id }, (err, movie) => {
+    Business.findOne({ _id: req.params.id }, (err, business) => {
         if (err) {
             return res.status(404).json({
                 err,
@@ -114,7 +121,7 @@ getBusinessById = async (req, res) => {
 }
 
 getBusiness = async (req, res) => {
-    await Business.find({}, (err, movies) => {
+    await Business.find({}, (err, business) => {
         if (err) {
             return res.status(400).json({ success: false, error: err })
         }
@@ -123,7 +130,7 @@ getBusiness = async (req, res) => {
                 .status(404)
                 .json({ success: false, error: 'Business not found'})
         }
-        return res.status(200).json({ success: true, data: movies })
+        return res.status(200).json({ success: true, data: business })
     }).catch(err => console.log(err))
 }
 
@@ -132,5 +139,5 @@ module.exports = {
     updateBusiness,
     deleteBusiness,
     getBusinessById,
-    getBusiness,
+    getBusiness
 }

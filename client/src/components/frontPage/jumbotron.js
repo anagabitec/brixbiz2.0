@@ -1,5 +1,6 @@
 import React from "react";
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import {Link} from 'react-router-dom';
 // import backgroundimg from "../../backgroundimg.jpg";
 import "../../styles/jumbotron.css";
 
@@ -17,16 +18,15 @@ const JumbotronPage = () => {
                         <p className="lead">
                             Discover America's Small Business
                         </p>
-                        {/* <hr className="my-2" />
-                        <p>
-                            Now serving Williamsburg and Greenpoint 
-                        </p> */}
                         <div className="active-pink-3 active-pink-4 mb-4 search">
-                                <input className="form-control" type="text" placeholder="Search local business inventory" aria-label="Search" />
+                            <input className="form-control" type="text" placeholder="Search local business inventory" aria-label="Search" />
                         </div>
-                        <button type="button" class="btn btn-dark-green">Search brixbiz</button>
-                        <button type="button" class="btn btn-dark-green">Discover mode</button>
-                        
+                        <Link to='/discover'>
+                            <button type="button" class="btn btn-dark-green">Search brixbiz</button>
+                        </Link>
+                        <Link to='/discover'> 
+                            <button type="button" class="btn btn-dark-green" >Discover mode</button>
+                        </Link>
                     </MDBJumbotron>
                 </MDBCol>
                 

@@ -5,7 +5,7 @@
   padding-top:40px;
 } */
 .view .mask {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -13,5 +13,25 @@
     overflow: hidden;
     width: 80%;
     height: 50%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+}
+.carouselcontainer{
+  height: 500px;
+}
+
+.image-container{
+  /* object-fit: cover; */
+  height: 100%!important;
+}
+.image-carousel{
+  /* object-fit: cover; */
+  position: absolute !important;
+  height: 100%!important;
+  bottom: 0!important;
+  top: 0 !important;
+  min-height: 100%;
+}
+
+.view{
+  min-height: 100%;
 }

@@ -6,10 +6,8 @@
     background-size: cover;
     padding-top:40px;
     min-height: 10vh;
-}
-.jumbo{
-     margin-top: 25px;
-     
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
@@ -17,3 +15,4 @@
     margin-left: 30%;
     margin-right: 30%;
 }
+

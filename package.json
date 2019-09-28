@@ -2,7 +2,7 @@
   "name": "brixbiz-2.0",
   "version": "1.0.0",
   "description": "Platform connecting users, couriers and local mom and pop shops.",
-  "main": "server.js",
+  "main": "server",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
@@ -12,6 +12,7 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+
     "mongoose": "^5.7.1",
     "nodemon": "^1.19.2",
     "react-app-env": "^1.2.3",

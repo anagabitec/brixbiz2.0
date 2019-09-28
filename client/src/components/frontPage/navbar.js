@@ -39,7 +39,9 @@ class NavbarPage extends Component {
                                 </MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink> <Link to={`/mapfield`} className="active">Discover </Link>
+
+                                <MDBNavLink> <Link to={`/discover`} className="active">Discover </Link>
+
                                 </MDBNavLink>
                             </MDBNavItem>
                            
