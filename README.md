@@ -1,4 +1,4 @@
-# brixbiz-2.0
+# brixbiz2.0
 
 Platform connecting users, couriers and local mom and pop shops. 
 
